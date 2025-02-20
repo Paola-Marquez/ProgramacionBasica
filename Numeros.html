@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array</title>
+
+	<script type="text/javascript">
+
+		var min;
+		var max;
+		var i;
+
+		min = Number(prompt("Ingresa el primer número", 0));
+		max = Number(prompt("Ingresa el segundo Número", 0));
+
+
+        function orden ()
+        {
+        	if (min < max) 
+        	{
+              for (i = min; i <= max; i++) {
+              	document.write(i , "  ");
+              }
+        		
+        	}
+
+        	if (min > max) 
+        	{
+        		for (i = min; i >= max; i--) {
+              	document.write(i , "  ");
+              }
+
+        	}
+        }
+
+	</script>
+</head>
+<body>
+    <h1>Ordenar Números Ingresados</h1>
+    <input type="button" onclick="orden ()" value= "Mostrar Números"/>
+
+</body>
+</html>
