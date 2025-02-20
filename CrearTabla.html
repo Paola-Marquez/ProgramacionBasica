@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabla</title>
+    <script type="text/javascript">
+        var x,y;
+        var filas = Number(prompt("Insertar el Número de Filas"));
+        var columnas = Number(prompt("Insertar el Número de columnas"));
+        var tabla = filas * columnas;
+        alert("Dar clic en el botón Crear Tabla")
+        
+        function crearTabla ()
+        {    
+        document.write("<table border>");
+        for (x = 0; x < filas; x++) {
+            
+            document.write("<tr>");
+            for (var y = 0; y < columnas; y++) {
+            document.write("<td>");
+            document.write(tabla);
+            tabla --;
+            document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+
+        document.write("</table>");
+        }
+    </script>
+</head>
+<body>
+      	<input type="button" onclick="crearTabla ()" value= "Crear Tabla"!/>
+</body>
+</html>
