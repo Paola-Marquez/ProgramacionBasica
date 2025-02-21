@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calcula tu IMC</title>
+
+	<script type="text/javascript">
+		
+		let peso, talla, imc, imct;
+		
+		alert("Calcula tu IMC");
+		
+		do {
+                    peso = prompt("¿Cúal es tu peso en Kg?","00");
+		      peso = parseFloat(peso);
+		   }
+
+		while (isNaN (peso));
+
+              do {
+                    talla = prompt("¿Cúal es tu talla?", "0.00");
+		      talla = parseFloat(talla);
+                 }
+		while (isNaN (talla));
+
+		imc = peso / (talla*talla);
+		imct = imc.toFixed(2);
+		alert("Tu IMC es: " + imct);
+
+
+	</script>
+</head>
+<body>
+       <h1> Calculo de IMC</h1>
+       <p>Proceso Finalizado</p>
+</body>
+</html>
